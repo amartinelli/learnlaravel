@@ -15,6 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('teste/{nome}', 'TesteController@index');
+Route::get('notas', 'TesteController@notas');
+Route::get('blog/posts', 'BlogController@blog');
+Route::get('blog/posts/{id}', 'BlogController@post');
+Route::get('blog', 'BlogController@index');
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes

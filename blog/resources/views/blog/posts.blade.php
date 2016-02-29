@@ -17,10 +17,10 @@
                     <td>Post</td>
                     <td>Data</td>
                 </tr>
-		@foreach($posts as $post)
+		@foreach($posts as $key => $post)
 		<tr>
-                    <td>{{ $post[0] }}</td>
-                    <td>{{ $post[1] }}</td>
+                    <td>{{ $post[0] }} </td>
+                    <td><a href="posts/{{ $key }}">{{ $post[1] }}</a></td>
                     <td>{{ $post[2] }}</td>
                 </tr>
 		@endforeach
